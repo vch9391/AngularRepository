@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CourseServicesService } from '../course-services.service';
 
 @Component({
   selector: 'app-course',
@@ -7,5 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseComponent {
   title = "List of courses";
-  courses = ["courses1","courses2","courses3"];
+  courses;
+  constructor(){
+    let service = new CourseServicesService();
+    this.courses = service.getCourse();
+  }
 }
