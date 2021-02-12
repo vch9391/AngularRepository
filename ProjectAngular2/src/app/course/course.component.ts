@@ -9,8 +9,7 @@ import { CourseServicesService } from '../course-services.service';
 export class CourseComponent {
   title = "List of courses";
   courses;
-  constructor(){
-    let service = new CourseServicesService();
+  constructor(service: CourseServicesService){
     this.courses = service.getCourse();
   }
 }
