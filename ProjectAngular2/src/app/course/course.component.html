@@ -25,3 +25,9 @@
 <input [value]="textname" (keyup.enter)="textname = $event.target.value; onKeyUp()"/>
 <br/><br/>
 <input [(ngModel)]="textname" (keyup.enter)="onKeyUp()"/>
+<br/><br/>
+{{course.title | uppercase | lowercase}} <br/>
+{{course.students | number }} <br/>
+{{course.rating | number:'3.1-2' }} <br/>
+{{course.price | currency:'IND':true:'3.2-2' }} <br/>
+{{course.students | date:'shortDate' }} <br/>

@@ -25,4 +25,11 @@ export class CourseComponent {
   onKeyUp(){
     console.log("Enter was pressed! " + this.textname );
   }
+  course={
+    title:"The Angular",
+    rating:4.9732,
+    students:3052,
+    price: 190.95,
+    relesedDatw: new Date(2016,3,1)
+  };
 }
