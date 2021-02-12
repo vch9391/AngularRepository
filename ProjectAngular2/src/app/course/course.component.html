@@ -22,4 +22,6 @@
   <button (click)="onSave($event)">save</button>
 </div>
 <br/><br/>
-<input #textname (keyup.enter)="onKeyUp(textname.value)"/>
+<input [value]="textname" (keyup.enter)="textname = $event.target.value; onKeyUp()"/>
+<br/><br/>
+<input [(ngModel)]="textname" (keyup.enter)="onKeyUp()"/>

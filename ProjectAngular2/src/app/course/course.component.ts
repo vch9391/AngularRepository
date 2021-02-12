@@ -21,7 +21,8 @@ export class CourseComponent {
   onDivClicked(){
     console.log("DIV was clicked!");
   }
-  onKeyUp(textname){
-    console.log("Enter was pressed! "+textname);
+  textname="Intial Text";
+  onKeyUp(){
+    console.log("Enter was pressed! " + this.textname );
   }
 }
