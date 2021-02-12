@@ -32,4 +32,5 @@ export class CourseComponent {
     price: 190.95,
     relesedDatw: new Date(2016,3,1)
   };
+  CustomPipesText="The most comprehensive Angular 4 (Angular 2+) course. Build a real e-commerce app with Angular, Firebase and Bootstrap 4 and The most comprehensive Angular 4 (Angular 2+) course. Build a real e-commerce app with Angular, Firebase and Bootstrap 4";
 }
