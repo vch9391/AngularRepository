@@ -17,4 +17,7 @@
 
 <button [style.backgroundColor]= "isActive ? 'blue' : 'red'">Save</button>
 <br/><br/>
-<button class="btn btn-primary" [class.active]="isActive">Save</button>
+<button class="btn btn-primary" [class.active]="isActive">Save</button><br/><br/>
+<div (click)="onDivClicked()">
+  <button (click)="onSave($event)">save</button>
+</div>

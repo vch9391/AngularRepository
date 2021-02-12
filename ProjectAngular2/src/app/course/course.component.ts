@@ -14,4 +14,11 @@ export class CourseComponent {
   constructor(service: CourseServicesService){
     this.courses = service.getCourse();
   }
+  onSave($event){
+    $event.stopPropagation();
+    console.log("Button was clicked!",$event);
+  }
+  onDivClicked(){
+    console.log("DIV was clicked!");
+  }
 }
