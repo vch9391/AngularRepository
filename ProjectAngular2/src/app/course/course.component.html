@@ -15,4 +15,6 @@
   <li *ngFor="let course of courses">{{course}}</li>
 </ul>
 
+<button [style.backgroundColor]= "isActive ? 'blue' : 'red'">Save</button>
+<br/><br/>
 <button class="btn btn-primary" [class.active]="isActive">Save</button>
