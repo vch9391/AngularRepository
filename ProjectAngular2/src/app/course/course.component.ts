@@ -10,6 +10,7 @@ export class CourseComponent {
   title = "List of courses";
   courses;
   colSpan :number = 2;
+  isActive : boolean = true ; // test with false
   constructor(service: CourseServicesService){
     this.courses = service.getCourse();
   }
