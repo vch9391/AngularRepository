@@ -21,4 +21,5 @@
 <div (click)="onDivClicked()">
   <button (click)="onSave($event)">save</button>
 </div>
-<input (keyup.enter)="onKeyUp()"/>
+<br/><br/>
+<input #textname (keyup.enter)="onKeyUp(textname.value)"/>
