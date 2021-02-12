@@ -4,6 +4,13 @@
 <!-- Property Binding :: [textContent]="title" -->
 <h2 [textContent]="title"></h2>
 
+<!-- Attribute Binding :: attr -->
+<table>
+  <tr>
+    <td [attr.colspan]="colSpan">Attribute Binding</td>
+  </tr>
+</table>
+
 <ul>
   <li *ngFor="let course of courses">{{course}}</li>
 </ul>

@@ -9,6 +9,7 @@ import { CourseServicesService } from '../course-services.service';
 export class CourseComponent {
   title = "List of courses";
   courses;
+  colSpan :number = 2;
   constructor(service: CourseServicesService){
     this.courses = service.getCourse();
   }
